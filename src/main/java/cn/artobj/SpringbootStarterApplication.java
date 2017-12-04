@@ -40,7 +40,6 @@ import com.alibaba.druid.pool.DruidDataSource;
 
 import cn.artdev.springboot.DB;
 import cn.artdev.springboot.HomeWidget;
-import cn.artdev.springboot.StaticController;
 import cn.artdev.springboot.SysConver;
 import cn.artdev.springboot.SysFreemarkerView;
 
