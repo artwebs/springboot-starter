@@ -2188,3 +2188,7 @@ java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionPro
 2017-12-04 21:30:56.983  INFO 2195 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
 2017-12-04 21:30:56.991  INFO 2195 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
 2017-12-04 21:30:56.994  INFO 2195 --- [restartedMain] cn.artobj.SpringbootStarterApplication   : Started SpringbootStarterApplication in 1.01 seconds (JVM running for 3568.765)
+2017-12-04 21:40:56.453  INFO 2195 --- [RMI TCP Connection(114)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-12-04 21:40:56.456  INFO 2195 --- [RMI TCP Connection(114)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@726cac08: startup date [Mon Dec 04 21:30:56 CST 2017]; root of context hierarchy
+2017-12-04 21:40:56.472  INFO 2195 --- [RMI TCP Connection(114)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-12-04 21:40:56.474  INFO 2195 --- [RMI TCP Connection(114)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
