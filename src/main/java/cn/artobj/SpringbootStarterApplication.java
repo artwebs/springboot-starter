@@ -208,7 +208,7 @@ public class SpringbootStarterApplication {
 	            //添加自定义解析器  
 	            Map map = resolver.getAttributesMap();  
 	            map.put("conver", new SysConver());  
-	            map.put("homeWidget", new HomeWidget());  
+//	            map.put("homeWidget", new HomeWidget());  
 	        }  
 	    };  
 	}  
