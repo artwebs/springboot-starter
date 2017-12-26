@@ -1,0 +1,9 @@
+<#-- 字典翻译 -->
+<#macro dic in data default="" infield='id' outfield='text'>     
+     <#list data as item>
+     	<#if item[infield]!==in>
+     		${item[outfield]!}
+     		<#break/>
+     	<#/if>
+     </#list>    
+</#macro> 

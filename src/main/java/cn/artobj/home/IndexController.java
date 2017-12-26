@@ -37,7 +37,7 @@ public class IndexController {
 		item2.put("id", "2");item2.put("text", "two");
 		list.add(item1);
 		list.add(item2);
-		model.put("nobj",new JSONArray(list));
+		model.put("nobj",list);
 		
 		return "home";
 	}
