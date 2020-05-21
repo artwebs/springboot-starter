@@ -34,6 +34,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('com.alibaba:druid:1.1.2')
 	compile('com.github.penggle:kaptcha:2.3.2')
+	compile('org.projectlombok:lombok:1.18.4')
 	compile fileTree(dir:'libs',include:['*.jar'])
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('mysql:mysql-connector-java')

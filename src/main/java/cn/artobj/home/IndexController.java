@@ -14,10 +14,14 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.alibaba.fastjson.JSON;
 
 import cn.artdev.springboot.DB;
 import cn.artdev.springboot.Page;
 import cn.artdev.springboot.Page.Interval;
+import cn.artobj.entity.User;
 
 @Controller
 @RequestMapping(value="/")
@@ -44,12 +48,15 @@ public class IndexController {
 	
 	@RequestMapping(value="/data",method = RequestMethod.GET)
 	@ResponseBody
-	public Object data(HttpServletRequest request,ModelMap model){
-//		DB.Table table=db.table("user").where("user_id=?", "00");
-		Page page = new Page(request).setPageSize(5).setTotal(99);
-		Interval showPage = page.getInterval();
+	public User data(HttpServletRequest request,ModelMap model){
+		DB.Table table=db.table("user").where("user_id=?", "00");
+//		Page page = new Page(request).setPageSize(5).setTotal(99);
+//		Interval showPage = page.getInterval();
 		
-		return showPage.getStart()+","+showPage.getEnd();
+//		return showPage.getStart()+","+showPage.getEnd();
+		User user = table.find(User.class);
+		System.out.println(JSON.toJSONString(user));
+		return user;
 		//return db.table(table.toSql("a")).where("a.org_id=?", "53").select();
 	}
 }
